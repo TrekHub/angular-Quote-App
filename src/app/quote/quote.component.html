@@ -5,11 +5,11 @@
     </h4>
     <p>{{quote.quoteContent}}.</p>
     <div class="votes d-flex justify-content-between">
-      <div class="d-flex">
-        <i class="fas fa-thumbs-up"></i> <span class="text-success mx-2">{{quote.upVote}}</span>
+      <div class="d-flex align-items-center">
+        <i (click)="upVoteQuote()" class="fas fa-thumbs-up"></i> <span class="text-success mx-2">{{quote.upVote}}</span>
       </div>
-      <div class="d-flex">
-        <i class="fas fa-thumbs-down"></i> <span class="text-danger mx-2">{{quote.downVote}}</span>
+      <div class="d-flex align-items-center">
+        <i (click)="downVoteQuote()" class="fas fa-thumbs-down"></i> <span class="text-danger mx-2">{{quote.downVote}}</span>
       </div>
     </div>
     <div class="d-flex">

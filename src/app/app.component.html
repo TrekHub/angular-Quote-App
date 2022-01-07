@@ -3,5 +3,5 @@
 </h1>
 
 <div class="container mx-auto my-5">
-  <app-quote  *ngFor="let quote of quotes" [quote]="quote" class="d-flex mx-2 my-2"></app-quote>
+  <app-quote  *ngFor="let quote of quotes; let i = index" [quote]="quote" class="d-flex mx-2 my-2"></app-quote>
 </div>
