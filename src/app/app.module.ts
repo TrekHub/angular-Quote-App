@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuotesComponent } from './quotes/quotes.component';
+import { FormComponent } from './form/form.component';
 
 
 @NgModule({
@@ -11,6 +12,7 @@ import { QuotesComponent } from './quotes/quotes.component';
     AppComponent,
     QuoteComponent,
     QuotesComponent,
+    FormComponent,
   
   ],
   imports: [
