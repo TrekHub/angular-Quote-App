@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Quote } from './quote';
+import { Quote } from './quote.model';
 
 @Component({
   selector: 'app-root',
@@ -7,27 +7,23 @@ import { Quote } from './quote';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  quotes: Quote[] = [
+  // quotes: Quote[] = [
+  //   new Quote("My name is Teddy Omondi", 34, 24),
+  //   new Quote("I love coding ", 4, 24),
+  // ]
 
+  quotes: Quote[] = [
     {
-     upVote: 30,
-      downVote: 10,
-      description: 'Quote One'
+      description: "My name is Teddy Omondi, I love school",
+      upVote: 213,
+      downVote: 12
+
     },
     {
-     upVote: 30,
-      downVote: 10,
-      description: 'Quote Two'
-    },
-    {
-     upVote: 30,
-      downVote: 10,
-      description: 'Quote Three'
-    },
-    {
-     upVote: 30,
-      downVote: 10,
-      description: 'Quote Four'
+      description: "My girlFriends name is Joy, I love her so much",
+      upVote: 213,
+      downVote: 12
+
     }
   ]
 }
