@@ -1,16 +1,20 @@
-<div class="quotes row">
+
   <div  class="quote col-md-3 p-2 border">
     <h4 class="py-2">
-      Teddy Omondi
+      {{quote.author}}
     </h4>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque optio dolorem, quidem veniam hic inventore maiores sed esse aperiam.</p>
+    <p>{{quote.quoteContent}}.</p>
     <div class="votes d-flex justify-content-between">
       <div class="d-flex">
-        <p>Upvote</p> <span class="text-success mx-2">12</span>
+        <p>Upvote</p> <span class="text-success mx-2">{{quote.upVote}}</span>
       </div>
       <div class="d-flex">
-        <p>DownVote</p> <span class="text-danger mx-2">43</span>
+        <p>DownVote</p> <span class="text-danger mx-2">{{quote.downVote}}</span>
       </div>
     </div>
+    <div class="d-flex">
+      <p>Submitted By:</p> <span class="text-danger mx-2">{{quote.submitted}}</span>
+    </div>
+
   </div>
-</div>
+

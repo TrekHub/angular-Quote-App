@@ -14,16 +14,13 @@ export class AppComponent {
 
   quotes: Quote[] = [
     {
-      description: "My name is Teddy Omondi, I love school",
-      upVote: 213,
-      downVote: 12
-
-    },
-    {
-      description: "My girlFriends name is Joy, I love her so much",
-      upVote: 213,
-      downVote: 12
+      author: "Isaac newton",
+      quoteContent: "My name is Teddy Omondi, I love school",
+      submitted: "Teddy Omondi",
+      upVote: 0,
+      downVote: 0
 
     }
+
   ]
 }
