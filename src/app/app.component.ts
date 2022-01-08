@@ -28,7 +28,40 @@ export class AppComponent {
       0,
       new Date('2022,01,09')
 
+    ),
+    new Quote(
+      Quote.generateId(),
+      "Isaac newton",
+      "My name is Teddy Omondi, I love school",
+      "Teddy Omondi",
+      0,
+      0,
+      new Date('2022,01,09')
+
+    ),
+    new Quote(
+      Quote.generateId(),
+      "Isaac newton",
+      "My name is Teddy Omondi, I love school",
+      "Teddy Omondi",
+      0,
+      0,
+      new Date('2022,01,09')
+
+    ),
+    new Quote(
+      Quote.generateId(),
+      "Isaac newton",
+      "My name is Teddy Omondi, I love school",
+      "Teddy Omondi",
+      0,
+      0,
+      new Date('2022,01,09')
+
     )
+
+
+
 
 
   ]
