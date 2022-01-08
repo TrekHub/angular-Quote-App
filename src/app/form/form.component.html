@@ -1,16 +1,16 @@
-<form>
+
     <div class="mb-3">
       <label for="author" class="form-label">Author</label>
-      <input type="text" class="form-control" id="author">
+      <input type="text" class="form-control" id="author" [(ngModel)]="author">
     </div>
     <div class="mb-3">
       <label for="quote" class="form-label">Quote</label>
-      <textarea class="form-control" id="quote" rows="3"></textarea>
+      <textarea class="form-control" id="quote" rows="3" [(ngModel)]="quoteContent"></textarea>
     </div>
     <div class="mb-3">
       <label for="submitted" class="form-label">Submitted By: </label>
-      <input type="text" class="form-control" id="submitted">
+      <input type="text" class="form-control" id="submitted" [(ngModel)]="submitted">
     </div>
     
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+    <button  (click)="newQuote()" class="btn btn-primary">Submit</button>
+

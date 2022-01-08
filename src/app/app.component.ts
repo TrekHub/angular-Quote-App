@@ -14,7 +14,9 @@ export class AppComponent {
       "My name is Teddy Omondi, I love school",
       "Teddy Omondi",
       0,
-      0
+      0,
+      new Date(2020,12,1)
+
 
     ),
     new Quote(
@@ -23,11 +25,16 @@ export class AppComponent {
       "My name is Teddy Omondi, I love school",
       "Teddy Omondi",
       0,
-      0
+      0,
+      new Date('2021,04,03')
 
     )
 
 
   ]
+
+  newQuote(newQuote: Quote){
+    this.quotes.push(newQuote);
+  }
 
 }
