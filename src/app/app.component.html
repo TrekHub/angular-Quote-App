@@ -34,17 +34,17 @@
 
 </div>
 
+<section>
+  <div class="text-center text-success my-2">
+    <h1>Quotes</h1>
 
+  </div>
+  <app-quotes [quotes]='quotes'>
 
+  </app-quotes>
 
+</section>
 
-<br>
-<br>
-
-
-<app-quotes [quotes]='quotes'>
-  
-</app-quotes>
 
 
 
@@ -57,10 +57,10 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-  <app-form (newQuoteEvent)="newQuote($event)"></app-form>
-      
+        <app-form (newQuoteEvent)="newQuote($event)"></app-form>
+
       </div>
-      
+
     </div>
   </div>
 </div>
