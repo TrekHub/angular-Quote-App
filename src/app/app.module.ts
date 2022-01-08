@@ -6,7 +6,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
-import { ElapsedTimePipe } from './elapsed-time.pipe';
+import { ElapsedTimePipe } from './elapsedTime.pipe';
 
 
 @NgModule({

@@ -18,6 +18,9 @@
       <p>Submitted By:</p> <span class="text-danger mx-2">{{quote.submitted}}</span>
     </div>
     <div>
+      <p>{{quote.createdOn | elapsedTime}}</p>
+    </div>
+    <div>
       
         <i (click)="deleteQuote()" class="fas fa-trash-alt"></i>
 

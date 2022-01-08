@@ -15,7 +15,7 @@ export class AppComponent {
       "Teddy Omondi",
       0,
       0,
-      new Date(2020,12,1)
+      new Date('2022,01,09')
 
 
     ),
@@ -26,7 +26,7 @@ export class AppComponent {
       "Teddy Omondi",
       0,
       0,
-      new Date('2021,04,03')
+      new Date('2022,01,09')
 
     )
 
