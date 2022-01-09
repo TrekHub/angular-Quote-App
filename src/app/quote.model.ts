@@ -28,11 +28,3 @@ export class Quote {
 
 }
 
-// export interface Quote {
-//     id: any
-//     author: string
-//     quoteContent: string
-//     submitted: string
-//     upVote: number
-//     downVote: number
-// }
