@@ -1,0 +1,11 @@
+
+.bg-image {
+    height: 500px;
+    width: 95%;
+    margin: auto;
+    border-radius: 20px;
+    margin-top:10px ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../assets/bg.jpg");
+}

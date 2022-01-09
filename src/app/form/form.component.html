@@ -1,0 +1,16 @@
+
+    <div class="mb-3">
+      <label for="author" class="form-label">Author</label>
+      <input type="text" class="form-control" id="author" [(ngModel)]="author">
+    </div>
+    <div class="mb-3">
+      <label for="quote" class="form-label">Quote</label>
+      <textarea class="form-control" id="quote" rows="3" [(ngModel)]="quoteContent"></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="submitted" class="form-label">Submitted By: </label>
+      <input type="text" class="form-control" id="submitted" [(ngModel)]="submitted">
+    </div>
+    
+    <button  (click)="newQuote()" class="btn btn-success" data-bs-dismiss="modal">Submit</button>
+
