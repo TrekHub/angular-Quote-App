@@ -1,7 +1,9 @@
-<div class="quote m-3 border p-3">
-  <h4 class="py-2 fw-bold">
+<div class=" quote m-3 border p-3">
+  <h4 class=" fw-bold">
     {{quote.author}}
   </h4>
+  <p class="elapsed">{{quote.createdOn | elapsedTime}}</p>
+
   <p>{{quote.quoteContent}}.</p>
   <div class="votes d-flex justify-content-between">
     <div class="d-flex align-items-center">
@@ -13,19 +15,11 @@
     </div>
   </div>
   <div class="d-flex justify-content-between mt-3">
-
     <div class="d-flex">
-      <p >Submitted By:</p> <span class="text-success mx-2 fw-bold">{{quote.submitted}}</span>
+      <p>Submitted By:</p> <span class="text-success mx-2 fw-bold">{{quote.submitted}}</span>
     </div>
     <div>
-      <!-- <p>{{quote.createdOn | elapsedTime}}</p> -->
-    </div>
-    <div>
-      
-        <i (click)="deleteQuote()" class="fas fa-trash-alt text-danger"></i>
-
-    
+      <i (click)="deleteQuote()" class="fas fa-trash-alt text-danger"></i>
     </div>
   </div>
-
 </div>

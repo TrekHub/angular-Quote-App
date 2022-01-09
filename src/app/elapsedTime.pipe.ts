@@ -17,26 +17,26 @@ export class ElapsedTimePipe implements PipeTransform {
 
 
 if(noOfDays > 0){
-  formattedTime += `${Math.floor(noOfDays)}Days`
+  formattedTime = `${Math.floor(noOfDays)} Days`
 }
 
 timeDiff-= noOfDays * 86400;
 let numberOfHours = Math.floor(timeDiff/3600);
 
 if(numberOfHours > 0){
- formattedTime += `${Math.floor(numberOfHours)}Hours `
+ formattedTime = `${Math.floor(numberOfHours)} Hours `
 }
 timeDiff-= numberOfHours * 3600;
 let minutes = Math.floor(timeDiff/60);
 
 if(minutes > 0){
- formattedTime += `${Math.floor(minutes)}Minutes `
+ formattedTime = `${Math.floor(minutes)} Minutes `
 }
 timeDiff-= minutes *60;
 let seconds =timeDiff%60;
 
 if(seconds > 0){
- formattedTime += `${Math.floor(seconds)}Seconds `
+ formattedTime = `${Math.floor(seconds)} Seconds `
 }
 
   return formattedTime;
