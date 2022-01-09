@@ -25,12 +25,23 @@ export class FormComponent implements OnInit {
 
   newQuote() {
 
-    const newQuote = new Quote(
-    Quote.generateId(), this.author, this.quoteContent, this.submitted, 0, 0, new Date());
+    if (this.author && this.quoteContent && this.submitted != '') {
+      const newQuote = new Quote(
+        Quote.generateId(), this.author, this.quoteContent, this.submitted, 0, 0, new Date());
 
-    this.newQuoteEvent.emit(newQuote)
-    console.log(``);
-    
+
+      this.newQuoteEvent.emit(newQuote)
+    }else {
+      alert("Please Provide all The Required Information")
+    }
+
+
+
+
+    this.author = "";
+    this.quoteContent = "";
+    this.submitted = ""
+
 
   }
 

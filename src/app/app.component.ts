@@ -10,8 +10,8 @@ export class AppComponent {
   quotes: Quote[] = [
     new Quote(
       Quote.generateId(),
-      "Isaac newton",
-      "My name is Teddy Omondi, I love school",
+      "James Cameron",
+      "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success. ",
       "Teddy Omondi",
       0,
       0,
@@ -21,9 +21,9 @@ export class AppComponent {
     ),
     new Quote(
       Quote.generateId(),
-      "Isaac newton",
-      "My name is Teddy Omondi, I love school",
-      "Teddy Omondi",
+      "Robert Louis Stevenson",
+      "Don't judge each day by the harvest you reap but by the seeds that you plant ",
+      "TrekHub",
       0,
       0,
       new Date('2022,01,09')
@@ -31,9 +31,9 @@ export class AppComponent {
     ),
     new Quote(
       Quote.generateId(),
-      "Isaac newton",
-      "My name is Teddy Omondi, I love school",
-      "Teddy Omondi",
+      "Hellen KEller",
+      "The best and most beautiful things in the world cannot be seen or even touched — they must be felt with the heart.",
+      "Maya",
       0,
       0,
       new Date('2022,01,09')
